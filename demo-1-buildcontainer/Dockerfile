@@ -24,8 +24,12 @@ WORKDIR /var/www/html/
 
 # COPY copies files from the working directory and adds them to the container’s file system.
 COPY        ./src/   /var/www/html/
+
 # USER specifies the username or the UID to use when running the container image for the RUN, CMD, and ENTRYPOINT instructions
 USER        1001
+
+# VOLUME defines the persistent storage location
+VOLUME /var/www/html/
 
 # ENTRYPOINT specifies the default command to execute when the image runs in a container.
 ENTRYPOINT  ["/usr/sbin/httpd"]
