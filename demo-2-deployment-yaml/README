@@ -1,0 +1,29 @@
+kubectl create deployment --image=quay.io/rhs_184574/k8s-training test
+
+kubectl create deployment --image=quay.io/rhs_184574/k8s-training test -o yaml --dry-run=client
+
+kubectl get deploy
+
+kubectl get pod -o wide
+
+kubectl describe pod
+
+kubectl delete deploy test 
+
+kubectl create -f k8s-training.yaml
+
+kubectl get deploy test -o yaml 
+
+kubectl delete deploy --all
+
+kubectl apply -f k8s-training.yaml
+
+kubectl get deploy test -o yaml
+
+kubectl edit deploy test
+
+kubectl expose deploy/test --port 80
+
+kubectl describe svc
+
+kubectl create ingress test --rule=test.apps.ocp-sno-aws-m7kck.sandbox2972.opentlc.com/*=test:80

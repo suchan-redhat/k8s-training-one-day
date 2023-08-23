@@ -1,0 +1,13 @@
+docker build -t test .
+
+docker tag test quay.io/<yourname>/test
+
+docker login quay.io
+
+docker push quay.io/<yourname>/test
+
+docker run -d -p 8080:80 --name test test
+
+docker stop test
+
+docker rm test

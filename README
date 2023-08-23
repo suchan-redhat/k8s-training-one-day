@@ -1,0 +1,8 @@
+Preparation
+
+oc new-project k8s-training
+oc project k8s-training
+oc create sa training
+oc -n k8s-training adm policy add-cluster-role-to-user cluster-admin -z training
+oc -n k8s-training adm policy add-scc-to-user anyuid -z default
+oc create token training --duration 99999m

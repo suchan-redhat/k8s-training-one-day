@@ -26,7 +26,7 @@ WORKDIR /var/www/html/
 COPY        ./src/   /var/www/html/
 
 # USER specifies the username or the UID to use when running the container image for the RUN, CMD, and ENTRYPOINT instructions
-USER        1001
+USER        0
 
 # VOLUME defines the persistent storage location
 VOLUME /var/www/html/
