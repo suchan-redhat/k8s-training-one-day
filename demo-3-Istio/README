@@ -1,0 +1,4 @@
+Show Istio Graph, 
+while true; do curl http://bookinfo-bookinfo-gateway-684888c0ebb17f37-istio-system.apps.ocp-sno-aws-m7kck.sandbox2972.opentlc.com/productpage; sleep 1; done
+
+Show traffic flow
