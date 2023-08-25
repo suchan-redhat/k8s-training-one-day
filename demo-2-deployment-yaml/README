@@ -27,3 +27,5 @@ kubectl expose deploy/test --port 80
 kubectl describe svc
 
 kubectl create ingress test --rule=test.apps.ocp-sno-aws-m7kck.sandbox2972.opentlc.com/*=test:80
+
+quay.io/redhattraining/loadtest:v1.0
