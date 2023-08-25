@@ -32,7 +32,7 @@ USER        0
 VOLUME /var/www/html/
 
 # ENTRYPOINT specifies the default command to execute when the image runs in a container.
-ENTRYPOINT  ["/usr/sbin/httpd"]
+ENTRYPOINT  ["/usr/bin/bash"]
 
 # CMD provides the default arguments for the ENTRYPOINT instruction.
-CMD         ["-D", "FOREGROUND"]
+CMD         ["-c", "/usr/sbin/httpd", "-D", "FOREGROUND"]
