@@ -35,4 +35,4 @@ VOLUME /var/www/html/
 ENTRYPOINT  ["/usr/bin/bash"]
 
 # CMD provides the default arguments for the ENTRYPOINT instruction.
-CMD         ["-c", "/usr/sbin/httpd", "-D", "FOREGROUND"]
+CMD         ["-c","/usr/sbin/httpd","-D","FOREGROUND"] 
